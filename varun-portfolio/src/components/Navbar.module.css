@@ -1,0 +1,55 @@
+.navbar{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: none;
+}
+
+.logo{
+    font-size: 1.5 rem;
+    font-weight: normal;
+    margin-right: 2rem;
+}
+
+.navLinks{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navLinks li{
+    display: flex;
+    align-items: center;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: blue;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: gray;
+}
