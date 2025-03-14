@@ -5,7 +5,7 @@ import {FaInstagram,FaFacebook,FaYoutube} from 'react-icons/fa'
 const Navbar = () => {
     return(
         <nav className={styles.navbar}>
-            <h1 className={styles.logo}>Varun</h1>
+            <h1 className={styles.logo}>Varun Rajkhowa</h1>
 
             <ul className={styles.navLinks}>
                 <li><a href='#about'>About</a></li>

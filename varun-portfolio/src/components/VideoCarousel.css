@@ -1,0 +1,36 @@
+#video-track {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    position: relative; /* Changed from absolute */
+    top: 0; /* Removed translate issue */
+    left: 50%;
+    transform: translateX(-50%); /* Only moving horizontally */
+    transition: transform 0.3s ease-out;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.video-container {
+    flex: 0 0 auto;
+    width: 500px; /* Adjust width */
+    height: 50vh; /* Set height relative to viewport */
+    overflow: hidden;
+    position: relative;
+    border: none;
+    z-index: 2; /* Ensure it doesn't cover unnecessary areas */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 50%;
+    border: none;
+    pointer-events: auto; /* Ensures only iframe handles clicks */
+}
+
+/* Ensure it doesn't overlap navbar */
+@media (max-width: 768px) {
+    #video-track {
+        top: 60%; /* Adjust for smaller screens */
+    }
+}
